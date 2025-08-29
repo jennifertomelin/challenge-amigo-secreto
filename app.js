@@ -21,3 +21,27 @@ function agregarAmigo() {
 function limpiarCampo() {
     document.getElementById("amigo").value = ""
 }
+
+// Implementar funcion para actualizar la lista de amigos
+function actualizarLista() {
+    let lista = document.getElementById("lista-amigos")
+    lista.innerHTML = ""
+
+    amigos.forEach(function(amigo) {
+        let li = document.createElement("li")
+        li.textContent = amigo
+        lista.appendChild(li)
+    })
+}
+
+// Implementar funcion para sortear amigo secreto
+function sortearAmigo() {
+    if (amigos.length < 2) {
+        alert("Agrega al menos 2 amigos para sortear un amigo secreto.")
+        return
+    }
+
+    let indice = Math.floor(Math.random() * amigos.length)
+    let amigoSecreto = amigos[indice]
+    alert("El amigo secreto es: " + amigoSecreto)
+}
