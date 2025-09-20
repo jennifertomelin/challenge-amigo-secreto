@@ -1,6 +1,6 @@
 <h1> Amigo Secreto</h1>
 
-- Estado del proyecto: En contrucción.
+- Estado del proyecto: Finalizado.
 
   Aplicación en JavaScrip para organizar un sorteo de Amigo secreto.
   Permite a los usuarios ingresar nombres de amigos en una lista, y al finalizar, seleccionar aleatoriamente quién será el "amigo secreto"
@@ -14,3 +14,13 @@
   **Visualizar la lista:** Los nombres ingresados aparecerán en una lista debajo del campo de entrada.
 
   **Sorteo aleatorio:** Al hacer clic en el botón "Sortear Amigo", se seleccionará aleatoriamente un nombre de la lista y se mostrará en la página.
+
+- Estructura sugerida del proyecto
+  
+amigo-secreto/
+
+├─ index.html
+
+├─ app.js        // el código JS que compartiste
+
+└─ styles.css    // opcional
