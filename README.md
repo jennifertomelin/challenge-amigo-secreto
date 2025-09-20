@@ -21,6 +21,6 @@ amigo-secreto/
 
 ├─ index.html
 
-├─ app.js        // el código JS que compartiste
+├─ app.js       
 
-└─ styles.css    // opcional
+└─ styles.css   
