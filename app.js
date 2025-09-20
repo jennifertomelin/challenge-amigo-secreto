@@ -14,7 +14,8 @@ function agregarAmigo() {
 
     amigos.push(amigo)
     document.getElementById("amigo").value = ""
-    console.log(amigos)
+    actualizarLista()
+    // console.log(amigos)
 }
 
 //Limpiar el campo de entrada
@@ -43,5 +44,13 @@ function sortearAmigo() {
 
     let indice = Math.floor(Math.random() * amigos.length)
     let amigoSecreto = amigos[indice]
-    alert("El amigo secreto es: " + amigoSecreto)
+
+
+// Mostrar resultado en la pagina
+let resultado = document.getElementById("resultado")
+resultado.innerHTML = "" 
+let li = document.createElement("li")
+li.textContent = `Tu amigo secreto es: ` + amigoSecreto
+resultado.appendChild(li)
+
 }
